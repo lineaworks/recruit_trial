@@ -67,151 +67,192 @@ const img_path = assetsRelative() + 'img';
 
 <%# start page content -%>
 
-<header class="header">
-  <h1 class="header-h">日本ALO音楽研究所</h1>
-  <div class="header-tel">
-    <p class="header-tel-number"><span class="header-tel-number-word">TEL</span><span>0120-00-0000</span></p>
-    <p class="header-tel-note">10:00〜18:00&nbsp;&nbsp;土日・祝日・年末年始を除く</p>
-  </div>
-  <div class="header-contact">
-    <a href="#" class="btn-contact">お問い合わせ</a>
-  </div>
-  <nav class="header-menu">
-    <div class="header-menu-button">
-      <span class="header-menu-button-text">MENU</span>
-      <span class="header-menu-button-line"></span>
+<header class="l-header">
+  <div class="p-header">
+    <h1 class="p-header__h">日本ALO音楽研究所</h1>
+    <div class="p-header__tel">
+      <div class="p-header__tel--sp c-inner-img"><img src="<%= img_path %>/icon/tel_header.png" alt="" /></div>
+      <p class="p-header__tel-number"><span class="p-header__tel-number-text">TEL</span><span>0120-00-0000</span></p>
+      <p class="p-header__tel-note">10:00〜18:00&nbsp;&nbsp;土日・祝日・年末年始を除く</p>
     </div>
-    <div class="header-menu-overlay">
-      <h2 class="header-menu-overlay-h">日本ALO音楽研究所</h2>
-      <div class="header-menu-overlay-container">
-        <div class="header-menu-overlay-content">
-          <div class="header-menu-overlay-content-contact">
-            <h3 class="header-menu-overlay-content-contact-h">メールでのお問い合わせ</h3>
-            <a href="#" class="btn-contact">お問い合わせ</a>
-          </div>
-          <div class="header-menu-overlay-content-tel">
-            <h3 class="header-menu-overlay-content-tel-h">お電話でのお問い合わせ</h3>
-            <div class="header-menu-overlay-content-tel-wrap">
-              <p class="header-menu-overlay-content-tel-wrap-number">0120-00-0000</p>
-              <p class="header-menu-overlay-content-tel-wrap-note">10:00〜18:00&nbsp;&nbsp;土日・祝日・年末年始を除く</p>
-            </div>
-          </div>
-        </div>
-        <div class="header-menu-overlay-content">
-          <ul class="header-menu-overlay-content-list">
-            <li class="header-menu-overlay-content-list-item"><a href="#">ALOについて</a></li>
-            <li class="header-menu-overlay-content-list-item"><a href="#">ALOの強み</a></li>
-            <li class="header-menu-overlay-content-list-item"><a href="#">ALOの商品紹介</a></li>
-            <li class="header-menu-overlay-content-list-item"><a href="#">ご加盟までの流れ</a></li>
-            <li class="header-menu-overlay-content-list-item"><a href="#">よくあるご質問</a></li>
-          </ul>
-        </div>
+    <div class="p-header__contact">
+      <div class="p-header__contact--sp c-inner-img"><img src="<%= img_path %>/icon/mail_header.png" alt="" /></div>
+      <a href="#" class="p-header__contact-button c-contact-button">お問い合わせ</a>
+    </div>
+    <div class="p-header__menu">
+      <div class="p-header__menu-button">
+        <span class="p-header__menu-button-text">MENU</span>
+        <span class="p-header__menu-button-line"></span>
       </div>
     </div>
-  </nav>
+  </div>
 </header>
 
-<div class="key-visual">
-  <div class="key-visual-img"><img src="<%= img_path %>/gettyimages-1172181572-2048x2048.jpg" alt="" /></div>
-  <div class="key-visual-container">
-    <div class="key-visual-container-bg"></div>
-    <div class="key-visual-content">
-      <div class="key-visual-title">日本ALO音楽研究所</div>
-      <div class="key-visual-typography">
-        <img src="<%= img_path %>/alo_title.png" alt="" />
+<div class="l-key-visual">
+  <div class="p-key-visual">
+    <div class="p-key-visual__img"><img src="<%= img_path %>/gettyimages-1172181572-2048x2048.jpg" alt="" /></div>
+    <div class="p-key-visual__container">
+      <div class="p-key-visual__bg"></div>
+      <div class="p-key-visual__content">
+        <div class="p-key-visual__title">日本ALO音楽研究所</div>
+        <div class="p-key-visual__typography">
+          <img src="<%= img_path %>/alo_title.png" alt="" />
+        </div>
+        <div class="p-key-visual__sub-title">この文章はダミーです。</div>
+        <div class="p-key-visual__sub-typography">ANIMAL LIBERATION ORCHESTRA</div>
+        <div class="p-key-visual__overview">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</div>
       </div>
-      <div class="key-visual-sub-title">この文章はダミーです。</div>
-      <div class="key-visual-sub-typography">ANIMAL LIBERATION ORCHESTRA</div>
-      <div class="key-visual-overview">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</div>
     </div>
-  </div>
-  <div class="scroll-down">
-    <span class="scroll-down-word">SCROLL DOWN</span>
+    <div class="c-scroll-down">
+      <p class="c-scroll-down__word"><span>SCROLL DOWN</span></p>
+    </div>
   </div>
 </div>
 
-<section class="about">
-  <div class="about-container">
-    <div class="about-left">
-      <div class="about-first-wrap">
-        <h2 class="about-first-h">ABOUT<span class="about-first-h-sub">ABOUT ALO [ANIMAL LIBERATION ORCHESTRA]</span></h2>
-        <p class="about-first-overview">この文章はダミーです。<br>文字の大きさ、量、字間、行間等を確認するために入れています。</p>
-        <p class="about-first-content">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+<section class="l-about">
+  <div class="p-about">
+    <div class="p-about__left">
+      <div class="p-about__first-wrap">
+        <h2 class="p-about__first-h">ABOUT<span class="p-about__first-h-sub">ABOUT ALO [ANIMAL LIBERATION ORCHESTRA]</span></h2>
+        <p class="p-about__first-overview">この文章はダミーです。<br>文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        <p class="p-about__left-content">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
       </div>
-      <div class="about-second-wrap">
-        <h2 class="about-second-overview">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</h2>
-        <p class="about-second-content">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+      <div class="p-about__second-wrap">
+        <h2 class="p-about__second-overview">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</h2>
+        <p class="p-about__left-content">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
       </div>
     </div>
-    <div class="about-right">
-      <div class="about-third-wrap">
-        <div class="about-third-img"><img src="<%= img_path %>/wood_square.png" alt="" /></div>
-        <div class="about-third-content">
-          <h2 class="about-third-h">ALO<span class="about-third-h-sub">ANIMAL LIBERATION ORCHESTRA</span></h2>
-          <p class="about-third-overview">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+    <div class="p-about__right">
+      <div class="p-about__third-wrap">
+        <div class="p-about__third-img"><img src="<%= img_path %>/wood_square.png" alt="" /></div>
+        <div class="p-about__third-content">
+          <h2 class="p-about__third-h">ALO<span class="p-about__third-h-sub">ANIMAL LIBERATION ORCHESTRA</span></h2>
+          <p class="p-about__third-overview">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
         </div>
-        <div class="about-third-img-accent-wrap">
-          <div class="about-third-img-accent">
+        <div class="p-about__third-img-accent-wrap">
+          <div class="p-about__third-img-accent">
             <img src="<%= img_path %>/gettyimages-1217234785-2048x2048.jpg" alt="" />
           </div>
         </div>
       </div>
     </div>
 
-    <div class="about-graph">
-      <div class="about-graph-img"><img src="<%= img_path %>/about_graph.png" alt="" /></div>
-      <div class="about-graph-container">
-        <h2 class="about-graph-overview">この文章はダミーです。<br>文字の大きさ、量、字間、行間等を確認するため</h2>
-        <p class="about-graph-content">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+    <div class="p-about__graph">
+      <div class="p-about__graph-img"><img src="<%= img_path %>/about_graph.png" alt="" /></div>
+      <div class="p-about__graph-container">
+        <h2 class="p-about__graph-overview">この文章はダミーです。<br>文字の大きさ、量、字間、行間等を確認するため</h2>
+        <p class="p-about__graph-content">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="product">
-  <div class="product-container">
-    <h2 class="product-h">PRODUCT<span class="product-h-sub">PRODUCT INFORMATION</span></h2>
-    <p class="product-overview">この文章はダミーです。</p>
-    <p class="product-content">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+<section class="product l-product">
+  <div class="p-product">
+    <h2 class="p-product__h">PRODUCT<span class="p-product__h-sub">PRODUCT INFORMATION</span></h2>
+    <p class="p-product__overview">この文章はダミーです。</p>
+    <p class="p-product__content">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
   </div>
-  <div class="product-list-container">
-    <ul class="product-list">
+  <div class="p-product__list-container">
+    <ul class="p-product__list">
       <% for(var i in products) { %>
-      <li class="product-list-item" data-slider-num="<%= i %>">
-        <div class="product-list-item-img">
+      <li class="p-product__item" data-slider-num="<%= i %>">
+        <div class="p-product__item-img c-inner-img">
           <img src="<%= img_path %>/<%= products[i].images[0] %>" alt="" />
         </div>
-        <div class="product-list-item-title-wrap">
-          <h3 class="product-list-item-title"><%= products[i].title %></h3>
-          <div class="product-list-item-link-wrap">
-            <a href="#" class="product-list-item-link-view-more">VIEW MORE</a>
+        <div class="p-product__item-title-wrap">
+          <h3 class="p-product__item-title"><%= products[i].title %></h3>
+          <div class="p-product__item-link-wrap">
+            <a href="#" class="p-product__item-link-view-more"><span>VIEW MORE</span></a>
           </div>
         </div>
-        <p class="product-list-item-description"><%= products[i].description %></p>
+        <p class="p-product__item-description"><%= products[i].description %></p>
       </li>
       <% } %>
     </ul>
   </div>
-  <div class="product-modal">
-    <div class="product-modal-close">
-      <span class="product-modal-close-line"></span>
+</section>
+
+<footer class="l-footer">
+  <div class="p-footer">
+    <div class="p-footer__img c-inner-img"><img src="<%= img_path %>/gettyimages-1150277961-2048x2048.jpg" alt="" /></div>
+    <div class="p-footer__tel">
+      <h2 class="p-footer__tel-h">お電話でのお問い合わせはこちら</h2>
+      <div class="p-footer__tel-wrap">
+        <p class="p-footer__tel-number">
+          0120-00-0000
+          <span class="p-footer__tel-note">10:00〜18:00&nbsp;&nbsp;土日・祝日・年末年始を除く</span>
+        </p>
+      </div>
+      <div class="p-footer__page-top">
+        <div class="p-footer__page-top-img"><img src="<%= img_path %>/arrow.png" alt="" /></div>
+        <div class="p-footer__page-top-text">PAGE TOP</div>
+      </div>
     </div>
-    <button type="button" class="product-modal-prev swiper-button-prev"></button>
-    <div class="product-modal-container">
-      <div class="product-modal-slider">
-        <div class="product-modal-slider-wrap swiper-wrapper">
+    <div class="p-footer__link">
+      <ul class="p-footer__link-list">
+        <li><a href="#">企業案内</a></li>
+        <li><a href="#">プライバシポリシー</a></li>
+      </ul>
+      <span class="p-footer__copyright">&copy;&nbsp;COMPANY</span>
+    </div>
+  </div>
+</footer>
+
+<div class="l-menu">
+  <div class="p-menu">
+    <div class="p-menu__close c-close-button">
+      <span class="c-close-button__line"></span>
+    </div>
+    <h2 class="p-menu__h">日本ALO音楽研究所</h2>
+    <div class="p-menu__container">
+      <div class="p-menu__content">
+        <div class="p-menu__content-wrap">
+          <h3 class="p-menu__contact-h c-menu-icon-title">メールでのお問い合わせ</h3>
+          <a href="#" class="p-menu__contact-link c-contact-button">お問い合わせ</a>
+        </div>
+        <div class="p-menu__content-wrap">
+          <h3 class="p-menu__tel-h c-menu-icon-title">お電話でのお問い合わせ</h3>
+          <div class="p-menu__tel-wrap">
+            <p class="p-menu__tel-number">0120-00-0000</p>
+            <p class="p-menu__tel-note">10:00〜18:00&nbsp;&nbsp;土日・祝日・年末年始を除く</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-menu__content">
+        <ul>
+          <li class="p-menu__list-item"><a href="#">ALOについて</a></li>
+          <li class="p-menu__list-item"><a href="#">ALOの強み</a></li>
+          <li class="p-menu__list-item"><a href="#">ALOの商品紹介</a></li>
+          <li class="p-menu__list-item"><a href="#">ご加盟までの流れ</a></li>
+          <li class="p-menu__list-item"><a href="#">よくあるご質問</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="l-modal">
+  <div class="p-modal">
+    <div class="p-modal__close c-close-button">
+      <span class="c-close-button__line"></span>
+    </div>
+    <div type="button" class="p-modal__prev swiper-button-prev"></div>
+    <div class="p-modal__container">
+      <div class="p-modal__slider">
+        <div class="p-modal__slider-wrap swiper-wrapper">
           <% for(var l in products) { %>
-          <div class="product-modal-slider-slide swiper-slide">
-            <div class="product-modal-content">
-              <h2 class="product-modal-content-h"><%= products[l].title %></h2>
-              <h3 class="product-modal-content-spec-h">SPEC</h3>
-              <p class="product-modal-content-spec-text"><%= products[l].spec %></p>
-              <p class="product-modal-content-description"><%= products[l].description %></p>
-              <h3 class="product-modal-content-other-images-h">OTHER IMAGES</h3>
-              <div class="product-modal-content-other-images-wrap">
+          <div class="p-modal__slider-slide swiper-slide">
+            <div class="p-modal__content">
+              <h2 class="p-modal__h"><%= products[l].title %></h2>
+              <h3 class="p-modal__spec-h">SPEC</h3>
+              <p class="p-modal__spec-text"><%= products[l].spec %></p>
+              <p class="p-modal__description"><%= products[l].description %></p>
+              <h3 class="p-modal__other-images-h">OTHER IMAGES</h3>
+              <div class="p-modal__other-images-wrap">
                 <ul>
                   <% for(var j in products[l].images) { %>
-                  <li><img src="<%= img_path %>/<%= products[l].images[j] %>" alt="" /></li>
+                  <li class="c-inner-img"><img src="<%= img_path %>/<%= products[l].images[j] %>" alt="" /></li>
                   <% } %>
                   <% var imagesResidueCount = Math.ceil(products[l].images.length / 4) * 4 - products[l].images.length; %>
                   <% if (imagesResidueCount > 0) {
@@ -222,20 +263,20 @@ const img_path = assetsRelative() + 'img';
                 </ul>
               </div>
             </div>
-            <div class="product-modal-img" data-slider-num="<%= l %>">
-              <div class="product-modal-img-slider slider-num-<%= l %>">
-                <div class="product-modal-img-wrap swiper-wrapper">
+            <div class="p-modal__img" data-slider-num="<%= l %>">
+              <div class="p-modal__img-slider slider-num-<%= l %>">
+                <div class="p-modal__img-wrap swiper-wrapper">
                   <% for(var k in products[l].images) { %>
                   <div class="swiper-slide">
-                    <img src="<%= img_path %>/<%= products[l].images[k] %>" class="product-modal-img-slider" alt="" />
+                    <img src="<%= img_path %>/<%= products[l].images[k] %>" alt="" />
                   </div>
                   <% } %>
                 </div>
               </div>
-              <div class="product-modal-img-slider-navigation-wrap">
-                <div class="product-modal-img-prev swiper-button-prev slider-num-<%= l %>"></div>
-                <div class="product-modal-img-pagination slider-num-<%= l %>"></div>
-                <div class="product-modal-img-next swiper-button-next slider-num-<%= l %>"></div>
+              <div class="p-modal__img-slider-navigation-wrap">
+                <div class="p-modal__img-prev swiper-button-prev slider-num-<%= l %>"></div>
+                <div class="p-modal__img-pagination slider-num-<%= l %>"></div>
+                <div class="p-modal__img-next swiper-button-next slider-num-<%= l %>"></div>
               </div>
             </div>
           </div>
@@ -243,33 +284,14 @@ const img_path = assetsRelative() + 'img';
         </div>
       </div>
     </div>
-    <button type="button" class="product-modal-next swiper-button-next"></button>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="footer-img"><img src="<%= img_path %>/gettyimages-1150277961-2048x2048.jpg" alt="" /></div>
-  <div class="footer-tel">
-    <h2 class="footer-tel-h">お電話でのお問い合わせはこちら</h2>
-    <div class="footer-tel-wrap">
-      <p class="footer-tel-wrap-number">
-        0120-00-0000
-        <span class="footer-tel-wrap-note">10:00〜18:00&nbsp;&nbsp;土日・祝日・年末年始を除く</span>
-      </p>
+    <div class="p-modal__pagination-wrap">
+      <div type="button" class="p-modal__prev swiper-button-prev"></div>
+      <div class="p-modal__pagination"></div>
+      <div type="button" class="p-modal__next swiper-button-next"></div>
     </div>
-    <div class="footer-page-top">
-      <div class="footer-page-top-img"><img src="<%= img_path %>/arrow.png" alt="" /></div>
-      <div class="footer-page-top-text">PAGE TOP</div>
-    </div>
+    <div type="button" class="p-modal__next swiper-button-next"></div>
   </div>
-  <div class="footer-link">
-    <ul class="footer-link-list">
-      <li><a href="#">企業案内</a></li>
-      <li><a href="#">プライバシポリシー</a></li>
-    </ul>
-    <span class="footer-link-company">&copy;&nbsp;COMPANY</span>
-  </div>
-</footer>
+</div>
 
 <%# end page content -%>
 

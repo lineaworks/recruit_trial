@@ -1,0 +1,28 @@
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+ul li, ol li {
+    list-style: none;
+}
+
+%link-common {
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    @extend %link-common;
+    display: block;
+
+    &:link,
+    &:hover,
+    &:visited,
+    &:active {
+        @extend %link-common;
+    }
+}

@@ -9,7 +9,7 @@ const { plugins } = config.base;
 
 // sass用のモジュール
 const sassModule = plugins.sass;
-sassModule.compiler = require('node-sass');
+sassModule.compiler = require('sass');
 
 // タスク
 const sass = () => {
