@@ -113,6 +113,9 @@ module.exports = {
       info: JSON.parse(
         fs.readFileSync(`${BASE_SETTINGS.src}ejs/data/info.json`)
       ),
+      products: JSON.parse(
+        fs.readFileSync(`${BASE_SETTINGS.src}ejs/data/products.json`)
+      ),
     },
     rename: (_path) => {
       _path.extname = '.html';

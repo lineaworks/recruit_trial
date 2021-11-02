@@ -1,0 +1,28 @@
+@use '../../tool/media' as bp;
+
+.c-menu-icon-title {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: -1rem;
+        left: 0;
+        width: 5.1rem;
+        height: 5.1rem;
+        background-image: url(../img/icon/mail_circle.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    @include bp.sp {
+        &::before {
+            top: -0.5rem;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+}

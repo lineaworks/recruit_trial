@@ -1,0 +1,155 @@
+@use '../../tool/media' as bp;
+@use '../../tool/mixin';
+
+.p-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+
+    &__h {
+        position: relative;
+        width: 80%;
+        font-size: 2.6rem;
+        font-weight: 300;
+        padding-bottom: 4rem;
+
+        &::after {
+            @include mixin.underline-white;
+        }
+    }
+
+    &__container {
+        display: flex;
+        width: 80%;
+        margin-top: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__content {
+        width: 100%;
+        padding: 4rem 10rem 4rem 3rem;
+
+        &:nth-of-type(2n) {
+            padding: 4rem 3rem 4rem 10rem;
+            border-left: 1px solid #707070;
+        }
+    }
+
+    &__contact-h {
+        padding-left: 8rem;
+    }
+
+    &__contact-link {
+        margin: 3.1rem 0 0 8rem;
+    }
+
+    &__tel-h {
+        margin-top: 4rem;
+        padding-left: 8rem;
+
+        &::before {
+            background-image: url(../img/icon/tel_circle.png);
+        }
+    }
+
+    &__tel-wrap {
+        margin: 2.1rem 0 0 8rem;
+    }
+
+    &__tel-number {
+        font-size: 3.6rem;
+        font-weight: 300;
+    }
+
+    &__tel-note {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+
+    &__list-item {
+        font-size: 1.8rem;
+        font-weight: 300;
+
+        &:nth-child(n+2) {
+            margin-top: 2.6rem;
+        }
+    }
+
+    @include bp.sp {
+        & {
+            justify-content: flex-start;
+        }
+
+        &__close {
+            z-index: 2;
+        }
+
+        &__h {
+            width: 100%;
+            margin: 1.9rem 0 0 1.7rem;
+            padding-bottom: 0;
+            font-size: 1.5rem;
+            font-weight: 300;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &__container {
+            width: 100%;
+            margin: 4.8rem 0 9.6rem;
+            padding: 0 4rem;
+            flex-wrap: wrap-reverse;
+        }
+
+        &__content {
+            display: flex;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            &:nth-of-type(2n) {
+                display: block;
+                padding: 0 0 4rem 0;
+                border-left: none;
+                border-bottom: 1px solid #707070;
+            }
+        }
+
+        &__content-wrap {
+            width: 100%;
+            padding: 2.1rem 0 3.1rem;
+            text-align: center;
+        }
+
+        &__contact-h {
+            display: inline-block;
+            padding-left: 5rem;
+        }
+
+        &__contact-link {
+            margin: 2.1rem 0 0 0;
+        }
+
+        &__tel-h {
+            display: inline-block;
+            margin-top: 0;
+            padding-left: 5rem;
+        }
+
+        &__tel-wrap {
+            margin: 1.2rem 0 0 0;
+        }
+
+        &__tel-note {
+            font-size: 1.2rem;
+        }
+    }
+}

@@ -1,2 +1,4 @@
-@import '~mathsass/dist/_math';
-@import '~ress/dist/ress.min.css';
+@use 'foundation';
+@use 'layout';
+@use 'object/component';
+@use 'object/project';

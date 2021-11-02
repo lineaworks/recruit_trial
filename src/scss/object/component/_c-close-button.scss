@@ -1,0 +1,43 @@
+@use '../../tool/media' as bp;
+@use '../../tool/mixin';
+
+.c-close-button {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+
+    &__line {
+        display: block;
+        position: relative;
+        width: 3.2rem;
+        padding-top: 1rem;
+
+        &::before {
+            @include mixin.underline-white;
+            top: 50%;
+            transform: rotate(45deg);
+        }
+        &::after {
+            @include mixin.underline-white;
+            top: 50%;
+            transform: rotate(-45deg);
+        }
+    }
+
+    @include bp.sp {
+        & {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        &__line {
+            width: 3rem;
+        }
+    }
+}
