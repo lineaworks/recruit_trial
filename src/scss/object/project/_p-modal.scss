@@ -32,7 +32,7 @@
         padding: 5.2rem 0 6.6rem;
         background-color: #fff;
         font-size: 1.2rem;
-        font-weight: 100;
+        font-weight: 300;
         color: #000;
     }
 
@@ -53,7 +53,7 @@
         padding: 0 4rem;
         margin-top: 2.2rem;
         font-size: 1.2rem;
-        font-weight: 100;
+        font-weight: 300;
         line-height: 2;
     }
 
@@ -61,14 +61,14 @@
         padding: 0 4rem;
         margin-top: 3.7rem;
         font-size: 1.4rem;
-        font-weight: 100;
+        font-weight: 300;
         line-height: 2;
     }
 
     &__other-images-h {
         padding: 0 3rem;
         margin-top: 10.6rem;
-        font-weight: 100;
+        font-weight: 300;
     }
 
     &__other-images-wrap {
@@ -85,8 +85,8 @@
 
         li {
             display: inline-block;
-            width: 20.5%;
-            border: 2px solid #fff;
+            position: relative;
+            width: 20.5% !important;
 
             &::before {
                 display: block;
@@ -106,6 +106,21 @@
 
             &.empty {
                 opacity: 0;
+            }
+
+            &.swiper-slide-thumb-active {
+                &::after {
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: calc(100% - 4px);
+                    height: calc(100% - 4px);
+                    border: 2px solid #fff;
+                }
             }
         }
     }
@@ -146,7 +161,7 @@
         padding-top: 1rem;
         justify-content: flex-end;
         font-size: 1.1rem;
-        font-weight: 100;
+        font-weight: 300;
         color: #f5f5f5;
     }
 
@@ -206,7 +221,7 @@
     &__pagination-wrap {
         display: none;
         font-size: 1.1rem;
-        font-weight: 100;
+        font-weight: 300;
         color: #fff;
         text-align: center;
     }

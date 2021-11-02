@@ -68,12 +68,12 @@
 
     &__tel-note {
         font-size: 1.3rem;
-        font-weight: 100;
+        font-weight: 300;
     }
 
     &__list-item {
         font-size: 1.8rem;
-        font-weight: 100;
+        font-weight: 300;
 
         &:nth-child(n+2) {
             margin-top: 2.6rem;
@@ -94,7 +94,7 @@
             margin: 1.9rem 0 0 1.7rem;
             padding-bottom: 0;
             font-size: 1.5rem;
-            font-weight: 100;
+            font-weight: 300;
 
             &::after {
                 display: none;

@@ -249,16 +249,16 @@ const img_path = assetsRelative() + 'img';
               <p class="p-modal__spec-text"><%= products[l].spec %></p>
               <p class="p-modal__description"><%= products[l].description %></p>
               <h3 class="p-modal__other-images-h">OTHER IMAGES</h3>
-              <div class="p-modal__other-images-wrap">
-                <ul>
+              <div class="p-modal__other-images-wrap slider-num-<%= l %>">
+                <ul class="swiper-wrapper">
                   <% for(var j in products[l].images) { %>
-                  <li class="c-inner-img"><img src="<%= img_path %>/<%= products[l].images[j] %>" alt="" /></li>
+                  <li class="p-modal__other-img c-inner-img swiper-slide"><img src="<%= img_path %>/<%= products[l].images[j] %>" alt="" /></li>
                   <% } %>
                   <% var imagesResidueCount = Math.ceil(products[l].images.length / 4) * 4 - products[l].images.length; %>
                   <% if (imagesResidueCount > 0) {
                      for(let ri = 0; ri < imagesResidueCount; ri++) {
                   %>
-                  <li class="empty"></li>
+                  <li class="empty swiper-slide"></li>
                   <% } } %>
                 </ul>
               </div>

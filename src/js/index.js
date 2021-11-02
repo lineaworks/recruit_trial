@@ -61,8 +61,17 @@ const $ = jquery;
   });
 
   // image swiper
+  const imageSwiperList = [];
   $('.p-modal__img').each(function (i) {
     const sliderNum = $(this).data('sliderNum');
+
+    const thumbSwiper = new Swiper(
+      `.p-modal__other-images-wrap.slider-num-${sliderNum}`,
+      {
+        slidesPerView: 4,
+      }
+    );
+
     const imageSwiper = new Swiper(
       `.p-modal__img-slider.slider-num-${sliderNum}`,
       {
@@ -76,8 +85,13 @@ const $ = jquery;
           nextEl: `.p-modal__img-next.slider-num-${sliderNum}`,
           prevEl: `.p-modal__img-prev.slider-num-${sliderNum}`,
         },
+        thumbs: {
+          swiper: thumbSwiper,
+        },
       }
     );
+
+    imageSwiperList[i] = imageSwiper;
   });
 
   // menu
@@ -100,6 +114,10 @@ const $ = jquery;
   $('.p-product__item').on('click', function () {
     const sliderNum = $(this).data('sliderNum');
     productsSwiper.slideTo(sliderNum);
+    // 全部のスライダーの画像を1番目にする
+    for (var elem of imageSwiperList) {
+      elem.slideTo(0);
+    }
     $('.l-modal').addClass('is-on');
   });
 
